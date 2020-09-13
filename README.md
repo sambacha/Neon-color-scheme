@@ -21,6 +21,7 @@ Neon's main goal is to make as many languages as possible look as good as possib
 * Clojure/EDN
 * CSS/SASS/SCSS - specifically, the [`Syntax Highlighting for SASS`](https://packagecontrol.io/packages/Syntax%20Highlighting%20for%20Sass) package
 * diff
+* [Dockerfiles](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
 * `Find In Files`
 * [Fortran](https://packagecontrol.io/packages/Fortran)
 * [Git Gutter](https://packagecontrol.io/packages/GitGutter)
@@ -53,7 +54,7 @@ Neon's main goal is to make as many languages as possible look as good as possib
 * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 * [Swift](https://packagecontrol.io/packages/Swift)
 * Table of Contents/Task Tags
-* Typescript
+* [Typescript](https://packagecontrol.io/packages/TypeScript%20Syntax)
 * YAML
 
 For major changes, I'll test most if not all of the above languages, as well as Makefile, Lua, and Perl, with maybe some others thrown in for fun. When I say "as many languages as possible" I mean it!
