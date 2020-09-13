@@ -38,7 +38,7 @@ Neon's main goal is to make as many languages as possible look as good as possib
 * [PackageDev](https://packagecontrol.io/packages/PackageDev) `.sublime-settings`, `.sublime-keymap`, `.sublime-mousemap`, `.sublime-macro`, `.YAML-tmLanguage`, etc.
 * PHP
 * Python
-    * [IPython](http://ipython.org)/[Jupyter](http://jupyter.org) within SublimeREPL
+    * [IPython](http://ipython.org)/[Jupyter](http://jupyter.org) within [SublimeREPL](https://packagecontrol.io/packages/SublimeREPL)
     * Django/[Djaneiro](https://packagecontrol.io/packages/Djaneiro)
     * [Jinja2 templates](https://github.com/mitsuhiko/jinja2-tmbundle)
     * All the customizations in the [`Python Improved`](https://packagecontrol.io/packages/Python%20Improved) syntax definition
@@ -86,19 +86,10 @@ More recently, I've been using [`Liberation Mono`](http://www.fontsquirrel.com/f
 The easiest method is through [Package Control](https://packagecontrol.io/), which you need to [install](https://packagecontrol.io/installation) first as it doesn't come with Sublime Text. (*Note*: It does now!) Open the Command Palette with <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>P</kbd> (Windows/Linux) or <kbd>⌘</kbd><kbd>Shift</kbd><kbd>P</kbd> (macOS) and type ***`pci`*** to bring up `Package Control: Install`. Click or hit <kbd>Enter</kbd>, type in `neon`, and `Neon Color Scheme` should show up. Select it, then activate the theme by choosing the `Preferences -> Color Scheme -> Neon Color Scheme -> Neon` menu option. Alternatively, paste the following line in `Packages/User/Preferences.sublime-settings` (`Preferences -> Settings - User`):
 
 ```js
-"color_scheme": "Packages/Neon Color Scheme/Neon.tmTheme"
+"color_scheme": "Packages/Neon Color Scheme/Neon.sublime-color-scheme"
 ```
 
----
-
-If you like to do things the old-fashioned way, in `~/Library/Application Support/Sublime Text 3/Packages/User` (macOS), `%APPDATA%\Sublime Text 3\Packages\User` (Windows), or `~/.config/sublime-text-3/Packages/User` (Linux) (change the `3` to `2` if you're still using the outdated version 2 &mdash; and ***please*** upgrade!):
-
-```bash
-git clone https://github.com/MattDMo/Neon-color-scheme.git "Neon Color Scheme"
-```
-
-This will create a menu option `Neon` under `Preferences -> Color Scheme -> User -> Neon Color Scheme`. However, unless you `git pull` manually, your installation will never get upgraded with new goodies.
-
+If you were using the old pre-3.0 version of **Neon**, the file name was `Neon.tmTheme`. If you are using **Neon** when you upgrade, a small plugin comes with the new version that will automagically change the file name to `Neon.sublime-color-scheme`. I switched formats both because JSON is far easier to work with than XML, and there are some cool new features coming in the next release of Sublime Text that don't work with `.tmTheme` files. Stay tuned!
 
 ## TextMate Installation:
 
@@ -108,7 +99,7 @@ For right now, manual cloning is the only option. Maybe I'll make a bundle somed
 git clone https://github.com/MattDMo/Neon-color-scheme.git "~/Library/Application Support/TextMate/Themes"
 ```
 
-Or, you can just download the [`.zip` file](https://github.com/MattDMo/Neon-color-scheme/archive/master.zip) and put it in the proper theme directory yourself.
+Or, you can just download the [`.zip` file](https://github.com/MattDMo/Neon-color-scheme/archive/master.zip) and put it in the proper theme directory yourself. TextMate only supports the `.tmTheme` format, so you won't get any new updates. Use Sublime instead! 
 
 
 
@@ -118,7 +109,7 @@ Sometimes the same file looks different in TextMate and Sublime Text. It may be 
 
 ![YAML-tmLanguage syntax highlighting with Neon](https://pigimal.com/img/github/YAML-tmLanguage_new.png)
 
-If you have questions, concerns, or suggested improvements, I'd love to hear from you! Feel free to [open an issue](https://github.com/MattDMo/Neon-sublime-theme/issues/new) or send a [pull request](https://github.com/MattDMo/Neon-sublime-theme/compare/) and I'll get back to you as soon as I can. You can also email me at <mattdmo@mattdmo.com>. Find my blog on Sublime Text and other stuff at [MattDMo.com](https://mattdmo.com).
+If you have questions, concerns, or suggested improvements, I'd love to hear from you! Feel free to [open an issue](https://github.com/MattDMo/Neon-sublime-theme/issues/new) or send a [pull request](https://github.com/MattDMo/Neon-sublime-theme/compare/) and I'll get back to you as soon as I can. You can also ping me on the Twitters [@MattDMo](https://twitter.com/MattDMo), or catch me on the [Sublime Discord server](https://discord.com/channels/280102180189634562/280102180189634562).
 
 
 ## License
