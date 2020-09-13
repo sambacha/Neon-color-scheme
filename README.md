@@ -1,3 +1,7 @@
+[![Package Control](https://packagecontrol.herokuapp.com/downloads/Neon%20Color%20Scheme.svg)](https://packagecontrol.io/packages/Neon%20Color%20Scheme)
+[![GitHub release](https://img.shields.io/github/release/mattdmo/neon-color-scheme.svg)](https://github.com/MattDMo/Neon-color-scheme/releases/latest)
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-3fabd1?logo=paypal)](https://paypal.me/MattMorrison966)
+
 # Neon Color Scheme
 
 **Neon** is a colorful bright-on-black color scheme for [Sublime Text](https://www.sublimetext.com/) and [TextMate](http://www.macromates.com). In designing it, I've aimed to make as many languages as possible look as good as possible, taking advantage of as many of the available [scopes](https://www.sublimetext.com/docs/scope_naming.html) as I can. **Neon** was originally designed for [Python](http://www.python.org), which has a very detailed language definition, but lots of languages look good with it, like JavaScript, CSS, HTML, Ruby, PHP, shell scripts, XML, Clojure, Fortran, R, LaTeX, Markdown, reStructuredText, and more. It's also great when using [@wuub](https://github.com/wuub)'s fantastic [SublimeREPL](https://packagecontrol.io/packages/SublimeREPL) plugin, which I can't say enough good things about.
@@ -111,7 +115,7 @@ Or, you can just download the [`.zip` file](https://github.com/MattDMo/Neon-colo
 
 Sometimes the same file looks different in TextMate and Sublime Text. It may be that the scopes are defined somewhat differently, or that the parsers don't work in quite the same way. Hack the `.tmlanguage` definition files if you're interested, it's an exciting combination of XML and regex! To ease the pain somewhat, I definitely recommend installing [`PackageDev`](https://packagecontrol.io/packages/PackageDev) via Package Control. Among many other things, it allows you to convert XML/Plist-based `.tmLanguage` files to YAML syntax, which **Neon** conveniently supports! Everything is much more straightforward to understand and edit, and when you're done you can run a build system from the Command Palette to convert the YAML back to XML.
 
-![YAML-tmLanguage syntax highlighting with Neon](https://www.pigimal.com/img/github/YAML-tmLanguage_new.png)
+![YAML-tmLanguage syntax highlighting with Neon](https://pigimal.com/img/github/YAML-tmLanguage_new.png)
 
 If you have questions, concerns, or suggested improvements, I'd love to hear from you! Feel free to [open an issue](https://github.com/MattDMo/Neon-sublime-theme/issues/new) or send a [pull request](https://github.com/MattDMo/Neon-sublime-theme/compare/) and I'll get back to you as soon as I can. You can also email me at <mattdmo@mattdmo.com>. Find my blog on Sublime Text and other stuff at [MattDMo.com](https://mattdmo.com).
 
@@ -125,8 +129,4 @@ This is free software. It is licensed under the [MIT License](http://opensource.
 
 ## Support
 
-[![PayPal donation link](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SJY8KLDDB8DXC)
-
-You can also give on [Gratipay](https://www.gratipay.com/on/github/MattDMo/).
-
----
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=R97MGGYES6GAJ&lc=US&item_name=Matthew%20D%2e%20Morrison&item_number=Neon%20Color%20Scheme&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="Donate" alt="PayPal - The safer, easier way to pay online!"></a>
