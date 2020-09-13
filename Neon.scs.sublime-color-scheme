@@ -19,8 +19,8 @@
         "fold_marker": "#06FF05",
         "minimap_border": "#1515FF7F",
         "accent": "#0205FF",
-        "popup_css": "",
-        "phantom_css": "",
+        // "popup_css": "", // leaving this line uncommented produces black type on near-black background for popups
+        // "phantom_css": "",
         "gutter": "#000000",
         "gutter_foreground": "#B0B0B0",
         "line_diff_width": "2",
@@ -159,7 +159,7 @@
         },
         {
             "name": "Variable",
-            "scope": "variable, punctuation.definition.variable",
+            "scope": "variable, punctuation.definition.variable, meta.function.inline.parameters variable.parameter",
             "foreground": "#FF25D9"
         },
         {
@@ -228,7 +228,7 @@
         },
         {
             "name": "Function definition parameters",
-            "scope": "variable.parameter.function, meta.function.parameters variable.parameter",
+            "scope": "variable.parameter.function, meta.function.parameters variable.parameter, meta.function-call.arguments variable.parameter",
             "foreground": "#FFF57F",
             "font_style": "italic"
         },
@@ -660,6 +660,11 @@
             "foreground": "#07FFF5"
         },
         {
+            "name": "SASS: RGBA Color",
+            "scope": "constant.other.color.rgba-value.css, meta.property-value.css constant.other.color.rgba-value.css, constant.other.color.rgba-value.css punctuation.definition.constant.css, meta.property-value.css constant.other.color.rgba-value.css punctuation.definition.constant.css",
+            "foreground": "#07B7F5"
+        },
+        {
             "name": "SCSS: Semicolon",
             "scope": "comment.punctuation.semicolon.sass",
             "foreground": "#6969FA"
@@ -735,6 +740,27 @@
             "foreground": "#FFFFFF",
             "background": "#277D08"
         },
+//  ________                      ___                           __     ___
+//  `MMMMMMMb.                    `MM                          69MM68b `MM
+//   MM    `Mb                     MM                         6M' `Y89  MM
+//   MM     MM   _____     ____    MM   __    ____   ___  __ _MM__ ___  MM   ____
+//   MM     MM  6MMMMMb   6MMMMb.  MM   d'   6MMMMb  `MM 6MM MMMMM `MM  MM  6MMMMb
+//   MM     MM 6M'   `Mb 6M'   Mb  MM  d'   6M'  `Mb  MM69 "  MM    MM  MM 6M'  `Mb
+//   MM     MM MM     MM MM    `'  MM d'    MM    MM  MM'     MM    MM  MM MM    MM
+//   MM     MM MM     MM MM        MMdM.    MMMMMMMM  MM      MM    MM  MM MMMMMMMM
+//   MM     MM MM     MM MM        MMPYM.   MM        MM      MM    MM  MM MM
+//   MM    .M9 YM.   ,M9 YM.   d9  MM  YM.  YM    d9  MM      MM    MM  MM YM    d9
+//  _MMMMMMM9'  YMMMMM9   YMMMM9  _MM_  YM._ YMMMM9  _MM_    _MM_  _MM__MM_ YMMMM9
+        {
+            "name": "=========== Dockerfile ==========",
+            "scope": ""
+        },
+        {
+            "name": "Dockerfile: entity.name.enum",
+            "scope": "entity.name.enum",
+            "foreground": "#06FF05"
+        },
+
 //  ________                    ___                           ________     ___
 //  `MMMMMMM 68b                `MM       68b                 `MMMMMMM 68b `MM
 //   MM    \ Y89                 MM       Y89                  MM    \ Y89  MM
@@ -1649,8 +1675,40 @@
 //              YMM
 
         {
-            "name": "=========== Python.sublime-syntax ==========",
-            "scope": ""
+            "name": "Line continuation, statement terminator",
+            "scope": "punctuation.separator.continuation.line, punctuation.terminator.statement",
+            "foreground": "#FFFF00",
+            "font_style": "bold"
+        },
+        {
+            "name": "Relative import, import all",
+            "scope": "keyword.control.import.relative, constant.language.import-all",
+            "foreground": "#FFFF00",
+            "font_style": "bold"
+        },
+        {
+            "name": "Lambda definition",
+            "scope": "meta.function.inline",
+            "background": "#0000669f",
+            "font_style": ""
+        },
+        {
+            "name": "lambda, def, class keywords",
+            "scope": "storage.type keyword.declaration",
+            "foreground": "#FF5133",
+            "font_style": ""
+        },
+        {
+            "name": "Unpacking operators (* and **)",
+            "scope": "keyword.operator.unpacking",
+            "foreground": "#FF7533",
+            "font_style": ""
+        },
+        {
+            "name": "Format string placeholder begin/end",
+            "scope": "punctuation.definition.placeholder",
+            "foreground": "#00B7FF",
+            "font_style": ""
         },
         {
             "name": "Generator/comprehension keywords",
@@ -1670,8 +1728,10 @@
             "font_style": "italic"
         },
         {
-            "name": "=========== Python/PythonImproved ==========",
-            "scope": ""
+            "name": "Format spec string",
+            "scope": "constant.other.placeholder constant.other.format-spec.python",
+            "foreground": "#CC0099",
+            "font_style": "italic",
         },
         {
             "name": "Comprehension keywords",
